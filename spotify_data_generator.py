@@ -5,7 +5,6 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="b570fa330f38480caab0f1
                                                client_secret="3349e3aef1764d92b175d5002e46852b",
                                                redirect_uri="https://github.com/robertjoy95/festivly.git",
                                                scope="user-library-read"))
-#ex
 results = sp.current_user_saved_tracks()
 for idx, item in enumerate(results['items']):
     track = item['track']
