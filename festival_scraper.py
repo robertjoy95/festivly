@@ -24,6 +24,7 @@ def get_artists(html_text):
     while(artists_remaining):
         end_ind = text.find('</li>')
         artist_text = text[ind+4:end_ind]
+        artist_text.replace("&amp;", "&")
         if artist_text.find('</a>') == -1:
             artists.append(artist_text)
         else:
@@ -111,7 +112,8 @@ def get_festivals(url):
             break
     return festivals
 
-festival_hub = 'https://www.musicfestivalwizard.com/all-festivals/'
-fests = get_festivals(festival_hub)
-with open('festival_list.json', 'w') as outfile:
-    json.dump(fests, outfile)
+def get_fest_info():
+    festival_hub = 'https://www.musicfestivalwizard.com/all-festivals/'
+    fests = get_festivals(festival_hub)
+    with open('festival_list.json', 'w') as outfile:
+        json.dump(fests, outfile)
