@@ -1,4 +1,6 @@
+# documentation: https://spotipy.readthedocs.io/en/2.18.0/
 import spotipy
+
 from spotipy.oauth2 import SpotifyOAuth
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="b570fa330f38480caab0f1b1377f6057",

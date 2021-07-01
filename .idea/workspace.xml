@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="65fa0716-ef0e-4620-b582-543af22a1c9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/festival_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/festival_list.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/festival_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/festival_scraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/festivly.py" beforeDir="false" afterPath="$PROJECT_DIR$/festivly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spotify_data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotify_data_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="RunManager" selected="Python.festivly">
+  <component name="RunManager" selected="Python.festival_scraper">
     <configuration name="festival_scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="festivly" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,9 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.festivly" />
         <item itemvalue="Python.festival_scraper" />
         <item itemvalue="Python.spotify_data_generator" />
+        <item itemvalue="Python.festivly" />
       </list>
     </recent_temporary>
   </component>
@@ -129,13 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625065625183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="artist list created">
+      <created>1625066710442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625066710442</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added files" />
     <MESSAGE value="festival scraper completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="festival scraper completed" />
+    <MESSAGE value="artist list created" />
+    <option name="LAST_COMMIT_MESSAGE" value="artist list created" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624977809279">
@@ -154,30 +163,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="691" y="134" key="#spotify_data_generator/0.0.1920.1040@0.0.1920.1040" timestamp="1624977824590" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1625065624697">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1625066709903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1625065624697" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1625066645597">
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1625066709903" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1625167645385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625066645597" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1625066645596">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625167645385" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1625167645384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625066645596" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1625066645596">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625167645384" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1625167645384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625066645596" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1625066645597">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625167645384" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1625167645385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625066645597" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625065633280">
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625167645385" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1625066715311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625065633280" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625066715311" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1625058103984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

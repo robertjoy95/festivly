@@ -9,9 +9,19 @@ def webpage_get(url):
     req = requests.get(url, 'html.parser', headers=headers)
     return req.text
 
+def get_webpage(html_text):
+    # get the festival's website
+    ind = html_text.find('hubwebsite')
+    html_text = html_text[ind:]
+    ind = html_text.find('href=') + 6
+    html_text = html_text[ind:]
+    end_ind = html_text.find('\"')
+    html_text = html_text[:end_ind]
+    html_text.replace("\"", "")
+    return html_text
+
 def get_artists(html_text):
     # concat the html to just contain the section with the artists
-    # TODO: reformat &amp; to meet spotify convention
     artists = []
     ind = html_text.find('Lineup</div>')
     html_text = html_text[ind:]
@@ -94,6 +104,7 @@ def get_festivals(url):
             festivals[fest_name]['location_coords'] = [get_info_by_keyword(fest_info, 'latitude'), get_info_by_keyword(fest_info, 'longitude')]
             fest_page = webpage_get(festivals[fest_name]['url'])
             festivals[fest_name]['lineup'] = get_artists(fest_page)
+            festivals[fest_name]['webpage'] = get_webpage(fest_page)
             # isolate the next section to get info from
             page_text = page_text[end_ind+10:]
             ind = page_text.find('{')
@@ -117,3 +128,5 @@ def get_fest_info():
     fests = get_festivals(festival_hub)
     with open('festival_list.json', 'w') as outfile:
         json.dump(fests, outfile)
+
+get_fest_info()
